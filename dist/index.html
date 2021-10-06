@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>toio learns Braille</title>
+</head>
+
+<body>
+<h1>toio learns Braille</h1>
+
+<section class="section toio-disconnected">
+    <button id="connect">Connect to toio cubes</button>
+</section>
+
+<section class="section game-modes">
+    <h2>Game Modes</h2>
+
+    <div class="didactic-mode">
+        <button id="didactic-btn" value='false'> Didactic Mode </button>
+
+        <h3 id='didactic-title'> You are now on Didactic Mode </h3>
+    </div>
+
+    <div class="interactive-mode">
+        <button id="interactive-btn" value='false'> Interactive Mode </button>
+        <h3 id='interactive-title'> You are now on Interactive Mode </h3>
+
+        <table id="move" class="interactive-mode">
+            <tbody>
+            <tr>
+                <td></td>
+                <td><button id="move-forward"><i class="fa fa-rotate-90"></i></button></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><button id="move-left" ></button></td>
+                <td></td>
+                <td><button id="move-right" ></button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="move-backward" ></button></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- check coordinates, if place say place, start spelling, check str spelling against robot identification,
+        move forward or not, at the end of spelling tell them to move to the next place -->
+        <!-- 2 toio? -->
+    </div>
+
+</section>
+
+<script src="main.js"></script>
+</body>
+<footer>
+    <p> LuFi4Accessibility @ <a href="https://uist.acm.org/uist2021/cfp.html#sic"> SIC UIST 2021 </a> </p>
+</footer>
+</html>
