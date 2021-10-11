@@ -16,12 +16,11 @@
     "copy-webpack-plugin": "^5.0.3",
     "prettier": "^1.18.2",
     "webpack": "^4.35.0",
-    "webpack-cli": "^3.3.5",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "@toio/cube": "^1.0.0",
-    "@toio/scanner": "^1.0.0",
-    "text-to-speech-js": "^1.1.10"
+    "@toio/scanner": "^1.0.0"
   }
 }

@@ -1,9 +1,12 @@
 import './android-ble-patch';
 import { NearestScanner } from '@toio/scanner';
 
+//cube and buttons
 let cube = null;
+let readStr=' ';
 let elem = document.getElementById('didactic-btn');
 let elem2 = document.getElementById('interactive-btn');
+
 
 //connect button for 1 toio bluetooth
 document.getElementById('connect').addEventListener('click', async () => {
@@ -119,186 +122,211 @@ document.getElementById('interactive-btn').addEventListener('click', async () =>
 
 //given a standard id position add to string and play audio of that letter/number
 function didacticMode(letterID) {
-    let readStr='';
+    let toSay;
     switch (letterID) {
         case 3670320:
-            TextToSpeech.talk("0");
             readStr += '0';
+            toSay = new SpeechSynthesisUtterance("0");
+            speechSynthesis.speak(toSay);
             console.log('0');
             break;
         case 3670321:
-            TextToSpeech.talk("1");
+            toSay = new SpeechSynthesisUtterance("1");
             readStr += '1';
             console.log('1');
             break;
         case 3670322:
-            TextToSpeech.talk('2');
+            toSay = new SpeechSynthesisUtterance("2");
+            speechSynthesis.speak(toSay);
             readStr += '2';
             console.log('2');
             break;
         case 3670323:
-            TextToSpeech.talk('3');
+            toSay = new SpeechSynthesisUtterance("3");
+            speechSynthesis.speak(toSay);
             readStr += '3';
             console.log('3');
             break;
         case 3670324:
-            TextToSpeech.talk('4');
+            toSay = new SpeechSynthesisUtterance("4");
+            speechSynthesis.speak(toSay);
             readStr += '4';
             console.log('4');
             break;
         case 3670325:
-            TextToSpeech.talk('5');
+            toSay = new SpeechSynthesisUtterance("5");
+            speechSynthesis.speak(toSay);
             readStr += '5';
             console.log('5');
             break;
         case 3670326:
-            TextToSpeech.talk('6');
+            toSay = new SpeechSynthesisUtterance("6");
+            speechSynthesis.speak(toSay);
             readStr += '6';
             console.log('6');
             break;
         case 3670327:
-            TextToSpeech.talk('7');
+            toSay = new SpeechSynthesisUtterance("7");
+            speechSynthesis.speak(toSay);
             readStr += '7';
             console.log('7');
             break;
         case 3670328:
-            TextToSpeech.talk('8');
+            toSay = new SpeechSynthesisUtterance("8");
+            speechSynthesis.speak(toSay);
             readStr += '8';
             console.log('8');
             break;
         case 3670329:
-            TextToSpeech.talk('9');
+            toSay = new SpeechSynthesisUtterance("9");
+            speechSynthesis.speak(toSay);
             readStr += '9';
             console.log('9');
             break;
         case 3670337:
-            TextToSpeech.talk('A');
+            toSay = new SpeechSynthesisUtterance("A");
+            speechSynthesis.speak(toSay);
             readStr += 'A';
             console.log('A');
             break;
         case 3670338:
-            TextToSpeech.talk('B');
+            toSay = new SpeechSynthesisUtterance("B");
+            speechSynthesis.speak(toSay);
             readStr += 'B';
             console.log('B');
             break;
         case 3670339:
-            TextToSpeech.talk('C');
+            toSay = new SpeechSynthesisUtterance("C");
+            speechSynthesis.speak(toSay);
             readStr += 'C';
             console.log('C');
             break;
         case 3670340:
-            TextToSpeech.talk('D');
+            toSay = new SpeechSynthesisUtterance("D");
+            speechSynthesis.speak(toSay);
             readStr += 'D';
             console.log('D');
             break;
         case 3670341:
-            TextToSpeech.talk('E');
+            toSay = new SpeechSynthesisUtterance("E");
+            speechSynthesis.speak(toSay);
             readStr += 'E';
             console.log('E');
             break;
         case 3670342:
-            TextToSpeech.talk('F');
+            toSay = new SpeechSynthesisUtterance("F");
+            speechSynthesis.speak(toSay);
             readStr += 'F';
             console.log('F');
             break;
         case 3670343:
-            TextToSpeech.talk('G');
+            toSay = new SpeechSynthesisUtterance("G");
+            speechSynthesis.speak(toSay);
             readStr += 'G';
             console.log('G');
             break;
         case 3670344:
-            TextToSpeech.talk('H');
+            toSay = new SpeechSynthesisUtterance("H");
+            speechSynthesis.speak(toSay);
             readStr += 'H';
             console.log('H');
             break;
         case 3670345:
-            TextToSpeech.talk('I');
+            toSay = new SpeechSynthesisUtterance("I");
+            speechSynthesis.speak(toSay);
             readStr += 'I';
             console.log('I');
             break;
         case 3670346:
-            TextToSpeech.talk('J');
+            toSay = new SpeechSynthesisUtterance("J");
+            speechSynthesis.speak(toSay);
             readStr += 'J';
             console.log('J');
             break;
         case 3670347:
-            TextToSpeech.talk('K');
+            toSay = new SpeechSynthesisUtterance("K");
+            speechSynthesis.speak(toSay);
             readStr += 'K';
             console.log('K');
             break;
         case 3670348:
-            TextToSpeech.talk('L');
+            toSay = new SpeechSynthesisUtterance("L");
+            speechSynthesis.speak(toSay);
             readStr += 'L';
             console.log('L');
             break;
         case 3670349:
-            TextToSpeech.talk('M');
+            toSay = new SpeechSynthesisUtterance("M");
+            speechSynthesis.speak(toSay);
             readStr += 'M';
             console.log('M');
             break;
         case 3670350:
+            toSay = new SpeechSynthesisUtterance("N");
+            speechSynthesis.speak(toSay);
             console.log('N');
-            TextToSpeech.talk('N');
             readStr += 'N';
             break;
         case 3670351:
+            toSay = new SpeechSynthesisUtterance("O");
+            speechSynthesis.speak(toSay);
             console.log('O');
-            TextToSpeech.talk('O');
             readStr += 'O';
             break;
         case 3670352:
-            console.log('P');
-            TextToSpeech.talk('P');
+            toSay = new SpeechSynthesisUtterance("P");
+            speechSynthesis.speak(toSay);
             readStr += 'P';
             break;
         case 3670353:
-            console.log('Q');
-            TextToSpeech.talk('Q');
+            toSay = new SpeechSynthesisUtterance("Q");
+            speechSynthesis.speak(toSay);
             readStr += 'Q';
             break;
         case 3670354:
-            console.log('R');
-            TextToSpeech.talk('R');
+            toSay = new SpeechSynthesisUtterance("R");
+            speechSynthesis.speak(toSay);
             readStr += 'R';
             break;
         case 3670355:
-            console.log('S');
-            TextToSpeech.talk('S');
+            toSay = new SpeechSynthesisUtterance("S");
+            speechSynthesis.speak(toSay);
             readStr += 'S';
             break;
         case 3670356:
-            console.log('T');
-            TextToSpeech.talk('T');
+            toSay = new SpeechSynthesisUtterance("T");
+            speechSynthesis.speak(toSay);
             readStr += 'T';
             break;
         case 3670357:
-            console.log('U');
-            TextToSpeech.talk('U');
+            toSay = new SpeechSynthesisUtterance("U");
+            speechSynthesis.speak(toSay);
             readStr += 'U';
             break;
         case 3670358:
-            console.log('V');
-            TextToSpeech.talk('V');
+            toSay = new SpeechSynthesisUtterance("V");
+            speechSynthesis.speak(toSay);
             readStr += 'V';
             break;
         case 3670359:
-            console.log('W');
-            TextToSpeech.talk('W');
+            toSay = new SpeechSynthesisUtterance("W");
+            speechSynthesis.speak(toSay);
             readStr += 'W';
             break;
         case 3670360:
-            console.log('X');
-            TextToSpeech.talk('X');
+            toSay = new SpeechSynthesisUtterance("X");
+            speechSynthesis.speak(toSay);
             readStr += 'X';
             break;
         case 3670361:
-            console.log('Y');
-            TextToSpeech.talk('Y');
+            toSay = new SpeechSynthesisUtterance("Y");
+            speechSynthesis.speak(toSay);
             readStr += 'Y';
             break;
         case 3670362:
             console.log('Z');
-            TextToSpeech.talk('Z');
+            toSay = new SpeechSynthesisUtterance("Z");
+            speechSynthesis.speak(toSay);
             readStr += 'Z';
             break;
         case 3670070:
@@ -306,8 +334,9 @@ function didacticMode(letterID) {
             readStr += ' ';
             break;
         case 3670032:
-            console.log('reading');
-            TextToSpeech.talk(readStr);
+            console.log('reading'+readStr);
+            toSay = new SpeechSynthesisUtterance(''+readStr);
+            speechSynthesis.speak(toSay);
             break;
         case 3670066:
             readStr = '';
