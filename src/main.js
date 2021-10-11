@@ -79,7 +79,8 @@ document.getElementById('interactive-btn').addEventListener('click', async () =>
     } else if (elem2.value === 'false') {
         elem2.innerText = "Leave";
         elem2.value = 'true';
-        document.getElementById('interactive-title').style.visibility='visible';
+        document.getElementById('interactiv' +
+          'title').style.visibility='visible';
         document.getElementById('interactive-table').style.visibility='visible';
     } else {
         elem2.innerText = "Interactive Mode";
@@ -121,183 +122,183 @@ function didacticMode(letterID) {
     let readStr='';
     switch (letterID) {
         case 3670320:
-            new Audio('sound_0.mp3').play();
+            TextToSpeech.talk("0");
             readStr += '0';
             console.log('0');
             break;
         case 3670321:
-            new Audio('sound_1.mp3').play();
+            TextToSpeech.talk("1");
             readStr += '1';
             console.log('1');
             break;
         case 3670322:
-            new Audio('sound_2.mp3').play();
+            TextToSpeech.talk('2');
             readStr += '2';
             console.log('2');
             break;
         case 3670323:
-            new Audio('sound_3.mp3').play();
+            TextToSpeech.talk('3');
             readStr += '3';
             console.log('3');
             break;
         case 3670324:
-            new Audio('sound_4.mp3').play();
+            TextToSpeech.talk('4');
             readStr += '4';
             console.log('4');
             break;
         case 3670325:
-            new Audio('sound_5.mp3').play();
+            TextToSpeech.talk('5');
             readStr += '5';
             console.log('5');
             break;
         case 3670326:
-            new Audio('sound_6.mp3').play();
+            TextToSpeech.talk('6');
             readStr += '6';
             console.log('6');
             break;
         case 3670327:
-            new Audio('sound_7.mp3').play();
+            TextToSpeech.talk('7');
             readStr += '7';
             console.log('7');
             break;
         case 3670328:
-            new Audio('sound_8.mp3').play();
+            TextToSpeech.talk('8');
             readStr += '8';
             console.log('8');
             break;
         case 3670329:
-            new Audio('sound_9.mp3').play();
+            TextToSpeech.talk('9');
             readStr += '9';
             console.log('9');
             break;
         case 3670337:
-            new Audio('sound_A.mp3').play();
+            TextToSpeech.talk('A');
             readStr += 'A';
             console.log('A');
             break;
         case 3670338:
-            new Audio('sound_B.mp3').play();
+            TextToSpeech.talk('B');
             readStr += 'B';
             console.log('B');
             break;
         case 3670339:
-            new Audio('sound_C.mp3').play();
+            TextToSpeech.talk('C');
             readStr += 'C';
             console.log('C');
             break;
         case 3670340:
-            new Audio('sound_D.mp3').play();
+            TextToSpeech.talk('D');
             readStr += 'D';
             console.log('D');
             break;
         case 3670341:
-            new Audio('sound_E.mp3').play();
+            TextToSpeech.talk('E');
             readStr += 'E';
             console.log('E');
             break;
         case 3670342:
-            new Audio('sound_F.mp3').play();
+            TextToSpeech.talk('F');
             readStr += 'F';
             console.log('F');
             break;
         case 3670343:
-            new Audio('sound_G.mp3').play();
+            TextToSpeech.talk('G');
             readStr += 'G';
             console.log('G');
             break;
         case 3670344:
-            new Audio('sound_H.mp3').play();
+            TextToSpeech.talk('H');
             readStr += 'H';
             console.log('H');
             break;
         case 3670345:
-            new Audio('sound_I.mp3').play();
+            TextToSpeech.talk('I');
             readStr += 'I';
             console.log('I');
             break;
         case 3670346:
-            new Audio('sound_J.mp3').play();
+            TextToSpeech.talk('J');
             readStr += 'J';
             console.log('J');
             break;
         case 3670347:
-            new Audio('sound_K.mp3').play();
+            TextToSpeech.talk('K');
             readStr += 'K';
             console.log('K');
             break;
         case 3670348:
-            new Audio('sound_L.mp3').play();
+            TextToSpeech.talk('L');
             readStr += 'L';
             console.log('L');
             break;
         case 3670349:
-            new Audio('sound_M.mp3').play();
+            TextToSpeech.talk('M');
             readStr += 'M';
             console.log('M');
             break;
         case 3670350:
             console.log('N');
-            new Audio('sound_N.mp3').play();
+            TextToSpeech.talk('N');
             readStr += 'N';
             break;
         case 3670351:
             console.log('O');
-            new Audio('sound_O.mp3').play();
+            TextToSpeech.talk('O');
             readStr += 'O';
             break;
         case 3670352:
             console.log('P');
-            new Audio('sound_P.mp3').play();
+            TextToSpeech.talk('P');
             readStr += 'P';
             break;
         case 3670353:
             console.log('Q');
-            new Audio('sound_Q.mp3').play();
+            TextToSpeech.talk('Q');
             readStr += 'Q';
             break;
         case 3670354:
             console.log('R');
-            new Audio('sound_R.mp3').play();
+            TextToSpeech.talk('R');
             readStr += 'R';
             break;
         case 3670355:
             console.log('S');
-            new Audio('sound_S.mp3').play();
+            TextToSpeech.talk('S');
             readStr += 'S';
             break;
         case 3670356:
             console.log('T');
-            new Audio('sound_T.mp3').play();
+            TextToSpeech.talk('T');
             readStr += 'T';
             break;
         case 3670357:
             console.log('U');
-            new Audio('sound_U.mp3').play();
+            TextToSpeech.talk('U');
             readStr += 'U';
             break;
         case 3670358:
             console.log('V');
-            new Audio('sound_V.mp3').play();
+            TextToSpeech.talk('V');
             readStr += 'V';
             break;
         case 3670359:
             console.log('W');
-            new Audio('sound_W.mp3').play();
+            TextToSpeech.talk('W');
             readStr += 'W';
             break;
         case 3670360:
             console.log('X');
-            new Audio('sound_X.mp3').play();
+            TextToSpeech.talk('X');
             readStr += 'X';
             break;
         case 3670361:
             console.log('Y');
-            new Audio('sound_Y.mp3').play();
+            TextToSpeech.talk('Y');
             readStr += 'Y';
             break;
         case 3670362:
             console.log('Z');
-
+            TextToSpeech.talk('Z');
             readStr += 'Z';
             break;
         case 3670070:
@@ -306,17 +307,16 @@ function didacticMode(letterID) {
             break;
         case 3670032:
             console.log('reading');
-            cube.playPresetSound(2); //TO DO Change soundID
             TextToSpeech.talk(readStr);
             break;
         case 3670066:
             readStr = '';
-            cube.playPresetSound(2); //TO DO Change soundID
+            cube.playPresetSound(4);
             console.log('restart');
             break;
         case 3670030:
             readStr = '';
-            cube.playPresetSound(2); //TO DO Change soundID
+            cube.playPresetSound(4);
             console.log('restart');
             break;
     }
@@ -328,88 +328,88 @@ function interactiveMode(coordinatesID) {
     //change to correct coordinates
     let currStr = '';
     switch (coordinatesID) {
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
+        case ((coordinatesID.x+-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Hospital');
             currStr = 'Hospital';
-            new Audio('sound_Hospital.mp3').play();
+            TextToSpeech.talk('sound_Hospital.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Fruit Store');
             currStr = 'FruitStore';
-            new Audio('sound_FruitStore.mp3').play();
+            TextToSpeech.talk('sound_FruitStore.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Police Station');
             currStr = 'PoliceStation';
-            new Audio('sound_PoliceSt.mp3').play();
+            TextToSpeech.talk('sound_PoliceSt.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Post Office');
             currStr = 'PostOffice';
-            new Audio('sound_PostOffice.mp3').play();
+            TextToSpeech.talk('sound_PostOffice.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Dress Shop');
             currStr = 'DressShop';
-            new Audio('sound_DressShop.mp3').play();
+            TextToSpeech.talk('sound_DressShop.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Fire Station');
             currStr = 'FireStation';
-            new Audio('sound_FireSt.mp3').play();
+            TextToSpeech.talk('sound_FireSt.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Garden');
             currStr = 'Garden';
-            new Audio('sound_Garden.mp3').play();
+            TextToSpeech.talk('sound_Garden.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Museum');
             currStr = 'Museum';
-            new Audio('sound_Museum.mp3').play();
+            TextToSpeech.talk('sound_Museum.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Ice Cream Shop');
             currStr = 'IceCreamShop';
-            new Audio('sound_IceCreamShop.mp3').play();
+            TextToSpeech.talk('sound_IceCreamShop.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Library');
             currStr = 'Library';
-            new Audio('sound_Library.mp3').play();
+            TextToSpeech.talk('sound_Library.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('School');
             currStr = 'School';
-            new Audio('sound_School.mp3').play();
+            TextToSpeech.talk('sound_School.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Coffee Shop');
             currStr = 'CoffeeShop';
-            new Audio('sound_Garden.mp3').play();
+            TextToSpeech.talk('sound_Garden.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Big House');
             currStr = 'BigHouse';
-            new Audio('sound_BigHouse.mp3').play();
+            TextToSpeech.talk('sound_BigHouse.mp3').play();
             //spellfunction while place ask for letters
             break;
         case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
             console.log('Small House');
             currStr = 'Small House';
-            new Audio('sound_SmallHouse.mp3').play();
+            TextToSpeech.talk('sound_SmallHouse.mp3').play();
             //spellfunction while place ask for letters
             break;
     }

@@ -17,9 +17,5 @@ module.exports = {
             'noble-mac': 'noble'
         }
     },
-    plugins: [
-        new CopyWebpackPlugin([{ from: 'static' }]),
-        new webpack.IgnorePlugin(/^ws$/)
-    ],
     devtool: ''
 };

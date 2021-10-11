@@ -106,8 +106,9 @@ h3{
     visibility: hidden;
 }
 
-#move-backward {
-    padding: 1em;
+#interactive-table{
+    visibility: hidden;
+    display: -webkit-inline-flex;
 }
 
 /* Button */
