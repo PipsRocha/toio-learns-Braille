@@ -1,7 +1,7 @@
 import './android-ble-patch';
 import { NearestScanner } from '@toio/scanner';
-
 import {places} from './coordinates.json';
+
 
 //cube and buttons
 let cube = null;
@@ -355,95 +355,18 @@ function didacticMode(letterID) {
 function interactiveMode(coordinatesID) {
     // TO DO
     //toio move buttons disable?
-    //change to correct coordinates
-    let currStr = '';
-    switch (coordinatesID) {
-        case ((coordinatesID.x+-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Hospital');
-            currStr = 'Hospital';
-            TextToSpeech.talk('sound_Hospital.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Fruit Store');
-            currStr = 'FruitStore';
-            TextToSpeech.talk('sound_FruitStore.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Police Station');
-            currStr = 'PoliceStation';
-            TextToSpeech.talk('sound_PoliceSt.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Post Office');
-            currStr = 'PostOffice';
-            TextToSpeech.talk('sound_PostOffice.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Dress Shop');
-            currStr = 'DressShop';
-            TextToSpeech.talk('sound_DressShop.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Fire Station');
-            currStr = 'FireStation';
-            TextToSpeech.talk('sound_FireSt.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Garden');
-            currStr = 'Garden';
-            TextToSpeech.talk('sound_Garden.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Museum');
-            currStr = 'Museum';
-            TextToSpeech.talk('sound_Museum.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Ice Cream Shop');
-            currStr = 'IceCreamShop';
-            TextToSpeech.talk('sound_IceCreamShop.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Library');
-            currStr = 'Library';
-            TextToSpeech.talk('sound_Library.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('School');
-            currStr = 'School';
-            TextToSpeech.talk('sound_School.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Coffee Shop');
-            currStr = 'CoffeeShop';
-            TextToSpeech.talk('sound_Garden.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Big House');
-            currStr = 'BigHouse';
-            TextToSpeech.talk('sound_BigHouse.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-        case ((coordinatesID.x-30 < coordinatesID.x < coordinatesID.x+30) && (coordinatesID.y-30 < coordinatesID.y < coordinatesID.y+30)):
-            console.log('Small House');
-            currStr = 'Small House';
-            TextToSpeech.talk('sound_SmallHouse.mp3').play();
-            //spellfunction while place ask for letters
-            break;
-    }
+    //update 30 value
 
+    let whereSay, currPlace;
+
+    for (let i in places) {
+        if ((coordinatesID.x+-30 < (places[i].x-places[0].x) < coordinatesID.x+30) && (coordinatesID.y-30 < (places[i].y-places[0].y) < coordinatesID.y+30)) {
+            console.log(''+ places[i].place);
+            whereSay = new SpeechSynthesisUtterance('You arrived at the'+ places[i].place.toString());
+            speechSynthesis.speak(whereSay);
+            //spellPlace(places[i].place.toString())
+        }
+    }
 }
 
 async function connect2() {
@@ -464,4 +387,6 @@ async function connect2() {
 
 function spellPlace(spellStr){
     // TO DO
+    
+
 }
