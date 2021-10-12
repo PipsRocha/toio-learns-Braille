@@ -1,6 +1,8 @@
 import './android-ble-patch';
 import { NearestScanner } from '@toio/scanner';
 
+import {places} from './coordinates.json';
+
 //cube and buttons
 let cube = null;
 let readStr=' ';
@@ -82,8 +84,7 @@ document.getElementById('interactive-btn').addEventListener('click', async () =>
     } else if (elem2.value === 'false') {
         elem2.innerText = "Leave";
         elem2.value = 'true';
-        document.getElementById('interactiv' +
-          'title').style.visibility='visible';
+        document.getElementById('interactive-title').style.visibility='visible';
         document.getElementById('interactive-table').style.visibility='visible';
     } else {
         elem2.innerText = "Interactive Mode";
