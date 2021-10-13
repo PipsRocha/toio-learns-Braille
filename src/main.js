@@ -84,7 +84,7 @@ document.getElementById('interactive-btn').addEventListener('click', async () =>
     } else if (elem2.value === 'false') {
         elem2.innerText = "Leave";
         elem2.value = 'true';
-        document.getElementById('interactive-title').style.visibility='visible';
+        document.getElementById('interactive-title').style.visibility = 'visible';
         document.getElementById('interactive-table').style.visibility='visible';
     } else {
         elem2.innerText = "Interactive Mode";
