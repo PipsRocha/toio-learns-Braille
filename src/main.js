@@ -355,14 +355,14 @@ function didacticMode(letterID) {
 function interactiveMode(coordinatesID) {
     // TO DO
     //toio move buttons disable?
-    //update 30 value
-
-    let whereSay, currPlace;
+    let whereSay;
 
     for (let i in places) {
-        if ((coordinatesID.x+-30 < (places[i].x-places[0].x) < coordinatesID.x+30) && (coordinatesID.y-30 < (places[i].y-places[0].y) < coordinatesID.y+30)) {
-            console.log(''+ places[i].place);
-            whereSay = new SpeechSynthesisUtterance('You arrived at the'+ places[i].place.toString());
+        console.log('center '+ places[i].x)
+        //if ((places[i].x <= coordinatesID.x <= (places[i].x-places[0].x+1)) && ((places[i].y-places[0].y) <= coordinatesID.y <= (places[i].y-places[0].y+1))) {
+        if ((places[i].x === coordinatesID.x ) && (places[i].y === coordinatesID.y)) {
+            //console.log(''+ places[i].place);
+            whereSay = new SpeechSynthesisUtterance('You arrived at the'+ places[i].place);
             speechSynthesis.speak(whereSay);
             //spellPlace(places[i].place.toString())
         }
@@ -386,7 +386,23 @@ async function connect2() {
 }
 
 function spellPlace(spellStr){
-    // TO DO
-    
+    let i = 0, l = spellStr.length, stdId;
+    for (i; i<l; i++) {
+
+        cube.on('id:standard-id', data => stdId= data);
+        cube.on('button:press', info => {
+            if(info.pressed) {
+                console.log('BTN', info.pressed);//true
+                console.log('BTN', stdId.standardId);
+                //if stdId.standardId is the letter, i++
+                //else toSay = new SpeechSynthesisUtterance('Ups... that's not the letter we want');
+                //speechSynthesis.speak(toSay);
+            }
+            console.log('BTN', info.pressed);//false
+        });
+
+
+    }
+
 
 }
